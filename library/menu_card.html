@@ -1,0 +1,213 @@
+<!-- run in 67% zoom -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        body{
+            background-color: black;
+            /* overflow: hidden; */
+        }
+
+        .main{
+            background-color: rgb(255, 209, 4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width:40%;
+            position: relative;
+            left: 400px;
+            top:0;
+        }
+        .menu{
+            background-color: black;
+            height: 93%;
+    width: 83%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .burger1{
+            background-image: url(https://image1.masterfile.com/getImage/NzAwLTAwMDEyNTYxZW4uMDAwMDAwMDA=AMy-1n/700-00012561en_Masterfile.jpg);
+    height: 200px;
+    background-position: center;
+    width: 211px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 90px;
+    border: 0.1px solid white;
+    left: 418px;
+    
+        }
+
+        .burger2{
+            background-image: url(https://static.vecteezy.com/system/resources/previews/032/323/808/non_2x/exploding-burger-with-vegetables-and-melted-cheese-on-black-background-generative-ai-free-photo.jpg);
+            height: 200px;
+    background-position: center;
+    width: 211px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+   
+    left: 418px;
+    border: 0.1px solid white;
+    top: 135px;
+        }
+        .burger3{
+            background-image: url(https://static.vecteezy.com/system/resources/previews/032/323/808/non_2x/exploding-burger-with-vegetables-and-melted-cheese-on-black-background-generative-ai-free-photo.jpg);
+            height: 200px;
+    background-position: center;
+    width: 211px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    left: 418px;
+    border: 0.1px solid white;
+    top: 175px;
+        }
+        .price{
+            background-color: #ffd104;
+    height: 33px;
+    width: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    bottom: -150px;
+    right: -61%;
+    border: 0.1px solid white;
+    font-weight: bolder;
+    font-size: 18px;
+        }
+        .num{
+            background-color: rgb(255, 209, 4);
+    height: auto;
+    color: black;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 80px;
+    right: 60px;
+        }
+        .menulist{
+            display: flex;
+            flex-direction: column;
+            width: 51%;
+            position: absolute;
+            left: 120px;
+        }
+        #heading{
+            font-weight: 700;
+            font-size: 50px;
+            
+        }
+        #bur::after,
+        #bur::before{
+            content: '';
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 50%;
+        }
+
+        #bur::before {
+            top: 37px;
+    left: 37px;
+    right: 37px;
+    bottom: 37px;
+}
+#bur::after {
+            top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+}
+        #svg{
+            display: flex;
+    gap: 200px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+   
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="menu">
+
+            <div class="menulist">
+    
+                <div id="svg">
+                    <svg fill="white" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.00 512.00" xml:space="preserve" stroke="#000000" stroke-width="0.00512"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="5.12"></g><g id="SVGRepo_iconCarrier"> <g> <g> <circle cx="290.909" cy="104.727" r="11.636"></circle> </g> </g> <g> <g> <circle cx="151.273" cy="104.727" r="11.636"></circle> </g> </g> <g> <g> <circle cx="256" cy="151.273" r="11.636"></circle> </g> </g> <g> <g> <circle cx="325.818" cy="151.273" r="11.636"></circle> </g> </g> <g> <g> <circle cx="360.727" cy="104.727" r="11.636"></circle> </g> </g> <g> <g> <circle cx="395.636" cy="151.273" r="11.636"></circle> </g> </g> <g> <g> <circle cx="116.364" cy="151.273" r="11.636"></circle> </g> </g> <g> <g> <circle cx="221.091" cy="104.727" r="11.636"></circle> </g> </g> <g> <g> <circle cx="186.182" cy="151.273" r="11.636"></circle> </g> </g> <g> <g> <path d="M256,11.636c-132.655,0-232.727,65.164-232.727,151.273v23.273c0,19.782,15.127,34.909,34.909,34.909h395.636 c19.782,0,34.909-15.127,34.909-34.909v-23.273C488.727,76.8,388.655,11.636,256,11.636z M465.455,186.182 c0,6.982-4.655,11.636-11.636,11.636H58.182c-6.982,0-11.636-4.655-11.636-11.636v-23.273c0-72.146,91.927-128,209.455-128 s209.455,55.854,209.455,128V186.182z"></path> </g> </g> <g> <g> <path d="M477.091,244.364h-26.764c-15.127,0-30.255,5.818-40.727,17.455l-23.273,23.273c-13.964,13.964-36.073,13.964-48.873,0 l-23.273-23.273c-10.473-10.473-25.6-17.455-40.727-17.455H34.909c-6.982,0-11.636,4.655-11.636,11.636 c0,6.982,4.655,11.636,11.636,11.636h236.218c9.309,0,18.618,3.491,24.436,10.473l23.273,23.273 c11.636,11.636,26.764,17.455,40.727,17.455c13.964,0,30.255-5.818,40.727-17.455l23.273-23.273 c6.982-6.982,15.127-10.473,24.436-10.473h29.091c6.982,0,11.636-4.655,11.636-11.636 C488.727,249.018,484.073,244.364,477.091,244.364z"></path> </g> </g> <g> <g> <path d="M453.818,384H58.182c-19.782,0-34.909,15.127-34.909,34.909v23.273c0,32.582,25.6,58.182,58.182,58.182h349.091 c32.582,0,58.182-25.6,58.182-58.182v-23.273C488.727,399.127,473.6,384,453.818,384z M465.455,442.182 c0,19.782-15.127,34.909-34.909,34.909H81.455c-19.782,0-34.909-15.127-34.909-34.909v-23.273c0-6.982,4.655-11.636,11.636-11.636 h395.636c6.982,0,11.636,4.655,11.636,11.636V442.182z"></path> </g> </g> <g> <g> <path d="M477.091,290.909h-23.273c-6.982,0-11.636,4.655-11.636,11.636s4.655,11.636,11.636,11.636h23.273 c6.982,0,11.636,4.655,11.636,11.636s-4.655,11.636-11.636,11.636H34.909c-6.982,0-11.636-4.655-11.636-11.636 s4.655-11.636,11.636-11.636h232.727c6.982,0,11.636-4.655,11.636-11.636s-4.655-11.636-11.636-11.636H34.909 C15.127,290.909,0,306.036,0,325.818c0,19.782,15.127,34.909,34.909,34.909h442.182c19.782,0,34.909-15.127,34.909-34.909 C512,306.036,496.873,290.909,477.091,290.909z"></path> </g> </g> </g></svg>
+                    <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 19H8V16H11V19Z" fill="#ffffff"></path> <path d="M11 13.5H8V10.5H11V13.5Z" fill="#ffffff"></path> <path d="M11 8H8V5H11V8Z" fill="#ffffff"></path> <path d="M16 19H13V16H16V19Z" fill="#ffffff"></path> <path d="M16 13.5H13V10.5H16V13.5Z" fill="#ffffff"></path> <path d="M16 8H13V5H16V8Z" fill="#ffffff"></path> </g></svg>
+                </div>
+               
+              <div id="heading">MENU <br> BURGER</div>
+<div id="burgerlist">
+
+<h1 style="color:#ffd104;">BURGER</h1>
+<h3 style="margin: 0;">Food Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$83</h3>
+Lorem ipsum, dolor sit amet con.
+
+<h3 style="margin:0; margin-top: 15px;">Food Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$86</h3>
+Lorem ipsum, dolor sit amet con.
+<h3 style="margin:0; margin-top: 15px;">Food Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80</h3>
+Lorem ipsum, dolor sit amet con.
+
+
+<h1 style="color:#ffd104;">SPECIAL BURGER</h1>
+<h3 style="margin: 0;">Food Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100</h3>
+Lorem ipsum, dolor sit amet con.
+
+<h1 style="color:#ffd104;">BIG BURGER</h1>
+<h3 style="margin: 0;">Food Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$93</h3>
+Lorem ipsum, dolor sit amet con.
+
+<h3 style="margin:0; margin-top: 15px;">Food Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$96</h3>
+Lorem ipsum, dolor sit amet con.
+<h3 style="margin:0; margin-top: 15px;">Food Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$90</h3>
+Lorem ipsum, dolor sit amet con.
+
+
+</div>
+            </div>
+
+    <div class="burger1" id="bur">
+<div class="price">$50% off</div>
+    </div>
+
+    <div class="burger2" id="bur">
+        <div class="price">$30% off</div>
+            </div>
+            <div class="burger3" id="bur">
+                <div class="price">$50% off</div>
+                    </div>
+                </div>
+
+                <div class="num">Free delivery </br> <h3 style="margin: 0; color:black">+22 445 775</h3></div>
+        </div>
+
+       
+    
+    </div>
+    
+</body>
+</html>
