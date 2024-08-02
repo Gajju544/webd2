@@ -1,0 +1,22 @@
+*{
+
+    color: azure;
+}
+
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;s
+    /* gap:10px; */
+    height: 100vh;
+}
+div{
+    text-align: center;
+height: 32%;
+}
+
+.third{
+    background-color: rgb(103, 247, 247);
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(school.jpg);
+    color: black;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.863);
+}
+
+h2 {
+    text-align: center;
+    color:black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#Name{
+    width: 30%;
+}
+
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="number"],
+
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition:0.3s ease;
+
+
+}
+input[type="file"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Scholarship Application Form</h2>
+        <form action="#">
+            <div class="namediv">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="Name" name="fullName" required>
+
+            <label for="lastName">last Name:</label>
+            <input type="text" id="Name" name="lastName" required>
+        </div>
+
+        <div class="gender">
+            <label for="gender">Geneder:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+    </div>
+    <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="course">Course applied for:</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select your course</option>
+                <option value="cse">CSE</option>
+                <option value="IT">IT</option>
+                <option value="AI">AI</option>
+            </select>
+
+            <label for="gpa">CGPA:</label>
+            <input type="number" id="gpa" name="gpa" step="0.01" required>
+
+            <label for="marksheet">Upload Marksheet:</label>
+<input type="file" id="marksheet" name="marksheet" required>
+
+<br>
+<div>
+<label for="checkbox">ALL the information i have filled is correct:</label>
+<input type="checkbox" id="checkbox" name="checkbox">
+</div>
+<br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
